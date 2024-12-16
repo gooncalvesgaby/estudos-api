@@ -2,6 +2,21 @@
 // forma ASSÍNCRONA em APIs. fetch() é uma função, e o primeiro
 // parâmetro da minha função fetch é a URL que eu quero acessar
 
+//o método catch eu uso para tratativa de erros
+
+// eu defini uma função e também indiquei que ela é ASYNC, ou seja,
+//ela pode lidar com operações que levam tempo para serem concluidas.
+// usando a palavra-chave ASYNC eu consigo utilizar a palavra-chave
+// AWAIT dentro da minha função. 
+
+// const resposta = await fetch(...) aqui eu to realizando uma requisição
+//https para buscar infos de uma URL e o resultado dessa requisição
+//ta sendo guardado nessa minha constante 'resposta'.
+
+//const dados = await resposta.json()
+//o método .json() converte a resposta da API em um objeto js
+//e esse objeto eu to guardando na minha constante 'dados'
+
 async function obtendoDados() {
     try{
         const resposta = await fetch('https://viacep.com.br/ws/02017010/json/')

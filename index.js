@@ -50,3 +50,13 @@ console.log(emailInput)
 //o ID eu uso unicamente uma vez por elemento, eu nunca repito o mesmo nome de ID
 //para mais de um elemento
 
+console.clear()
+
+const primeiroParagrafo = document.querySelector('p.paragrafo')
+
+console.log(primeiroParagrafo)
+
+//a propriedade .textContent me permite acessar ou alterar o texto de um elemento
+
+console.log("conteudo:", primeiroParagrafo.textContent)
+

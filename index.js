@@ -39,3 +39,14 @@ obtendoDados()
 const pegandoElemento = document.getElementsByTagName('h1')
 
 console.log(pegandoElemento)
+// eu posso pegar meu elemento pela Class dele também, assim como posso
+//pega pelo ID também, o JS me permite muitas possibilidades (...)
+
+const emailInput = document.getElementsByName('email')
+
+console.log(emailInput)
+
+//pega um elemento pelo ID é uma das praticas mais usadas pelos Devs
+//o ID eu uso unicamente uma vez por elemento, eu nunca repito o mesmo nome de ID
+//para mais de um elemento
+

@@ -31,3 +31,11 @@ async function obtendoDados() {
     }
 
 obtendoDados()
+
+// selecionar elementos html pelo document
+// getElementByTagName = eu pego todos os meus elementos pela TagName
+// aqui eu to pegando meu h1 pelo TagName
+
+const pegandoElemento = document.getElementsByTagName('h1')
+
+console.log(pegandoElemento)

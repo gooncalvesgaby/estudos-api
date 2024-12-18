@@ -42,6 +42,9 @@ console.log(pegandoElemento)
 // eu posso pegar meu elemento pela Class dele também, assim como posso
 //pega pelo ID também, o JS me permite muitas possibilidades (...)
 
+//se eu quiser por exemplo pegar o que foi digitado no meu input
+//eu posso usar o emailInput.value
+
 const emailInput = document.getElementsByName('email')
 
 console.log(emailInput)
@@ -59,4 +62,33 @@ console.log(primeiroParagrafo)
 //a propriedade .textContent me permite acessar ou alterar o texto de um elemento
 
 console.log("conteudo:", primeiroParagrafo.textContent)
+
+// a propriedade innerHTML permite que eu manipule um elemento hmtml
+
+primeiroParagrafo.innerHTML = "novo paragrafo definido"
+
+console.log("innerHTML", primeiroParagrafo.innerHTML)
+
+//aqui na minha linha abaixo eu estou definindo um valor para 
+//o meu emailInput, e o valor que eu defini é "gabrielle gonçalves"
+emailInput[0].value = "gabrielle gonçalves"
+
+// com a propriedade VALUE eu posso tanto pegar um valor digitado em um campo
+// como posso também alterar o valor desse campo, que foi o que eu acabei de fazer(...)
+
+//ADICIONANDO ELEMENTOS DENTRO DA MINHA PÁGINA 
+//o método document.createElement() me permite criar um novo elemento html
+
+const listaUl = document.querySelector("ul#lista")
+
+const novaTagLi = document.createElement("li") //criando uma tag li vazia
+
+novaTagLi.textContent = "uma nova li" // add um texto dentro da tag li
+
+console.log(novaTagLi)
+
+//o método APPENDCHILD() adiciona um novo filho ao elemento pai
+
+listaUl.appendChild(novaTagLi)
+
 

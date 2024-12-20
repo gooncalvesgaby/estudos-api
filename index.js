@@ -38,7 +38,7 @@ obtendoDados()
 
 const pegandoElemento = document.getElementsByTagName('h1')
 
-console.log(pegandoElemento)
+// console.log(pegandoElemento)
 // eu posso pegar meu elemento pela Class dele também, assim como posso
 //pega pelo ID também, o JS me permite muitas possibilidades (...)
 
@@ -47,27 +47,27 @@ console.log(pegandoElemento)
 
 const emailInput = document.getElementsByName('email')
 
-console.log(emailInput)
+// console.log(emailInput)
 
 //pega um elemento pelo ID é uma das praticas mais usadas pelos Devs
 //o ID eu uso unicamente uma vez por elemento, eu nunca repito o mesmo nome de ID
 //para mais de um elemento
 
-console.clear()
+// console.clear()
 
 const primeiroParagrafo = document.querySelector('p.paragrafo')
 
-console.log(primeiroParagrafo)
+// console.log(primeiroParagrafo)
 
 //a propriedade .textContent me permite acessar ou alterar o texto de um elemento
 
-console.log("conteudo:", primeiroParagrafo.textContent)
+// console.log("conteudo:", primeiroParagrafo.textContent)
 
 // a propriedade innerHTML permite que eu manipule um elemento hmtml
 
 primeiroParagrafo.innerHTML = "novo paragrafo definido"
 
-console.log("innerHTML", primeiroParagrafo.innerHTML)
+// console.log("innerHTML", primeiroParagrafo.innerHTML)
 
 //aqui na minha linha abaixo eu estou definindo um valor para 
 //o meu emailInput, e o valor que eu defini é "gabrielle gonçalves"
@@ -85,10 +85,21 @@ const novaTagLi = document.createElement("li") //criando uma tag li vazia
 
 novaTagLi.textContent = "uma nova li" // add um texto dentro da tag li
 
-console.log(novaTagLi)
+// console.log(novaTagLi)
 
 //o método APPENDCHILD() adiciona um novo filho ao elemento pai
 
-listaUl.appendChild(novaTagLi)
+// listaUl.appendChild(novaTagLi)
+
+// trabalhando com eventos em JS, eventos são acões que acontecem
+//na pagina web e são detectados pelo navegador, resultando em alguma
+//ação pro usuario entre outros (...)
+
+const button = document.querySelector("button")
+
+button.addEventListener('click', (event) => {
+    alert('voce clicou no botao')
+})
+
 
 
